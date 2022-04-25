@@ -48,5 +48,3 @@ You can find more information at:
 * [Chart Releaser](https://github.com/helm/chart-releaser)
 * [Chart Releaser GitHub Action](https://github.com/helm/chart-releaser-action)
 
-
-## test github action
