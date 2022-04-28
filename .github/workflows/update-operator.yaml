@@ -1,0 +1,19 @@
+name: Update the Sysdig Operator Repo
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - charts/sysdig/Chart.yaml
+
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: update sysdig-operator
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.SYSDIG_OPERATOR_ACCESS_TOKEN }}
+          repository: lilx1ao/sysdig-operator
+          event-type: sysdig-release
+          client-payload: '{"tag": "sysdig-1.12.70"}'
