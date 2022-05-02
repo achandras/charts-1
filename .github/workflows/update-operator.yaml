@@ -2,7 +2,7 @@ name: Update the Sysdig Operator Repo
 
 on:
   release:
-    type: [created]
+    type: [edited]
 
 jobs:
   dispatch:
