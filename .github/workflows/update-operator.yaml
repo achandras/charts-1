@@ -4,6 +4,7 @@ on:
   release:
     type: [released]
 
+jobs:
   dispatch:
     runs-on: ubuntu-latest
     steps:
