@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: grab the chart version tag 
         env:
-          TAG_NAME: ${{ github.events }}
+          TAG_NAME: ${{ github }}
         run:
           echo $TAG_NAME
 
