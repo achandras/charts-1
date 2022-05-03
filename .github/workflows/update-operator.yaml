@@ -10,9 +10,9 @@ jobs:
     steps:
       - name: grab the chart version tag 
         env:
-          TAG_NAME: ${{ github }}
+          TAG_NAME: ${{ toJson(github) }}
         run:
-          echo $TAG_NAME
+          echo "$TAG_NAME"
 
       - name: update sysdig-operator
         uses: peter-evans/repository-dispatch@v2
