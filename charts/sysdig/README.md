@@ -4,7 +4,6 @@
 security and forensics. Sysdig platform has been built on top of [Sysdig tool](https://sysdig.com/opensource/sysdig/)
 and [Sysdig Inspect](https://sysdig.com/blog/sysdig-inspect/) open-source technologies.
 
-test
 ## Table of Contents
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
