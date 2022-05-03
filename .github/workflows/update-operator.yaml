@@ -2,7 +2,7 @@ name: Update the Sysdig Operator Repo
 
 on:
   release:
-    type: [published, created, released, prereleased]
+    type: [published]
 
 jobs:
   dispatch:
@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: grab the chart version tag 
         env:
-          TAG_NAME: ${{ github.events.release.tag_name }}
+          TAG_NAME: ${{ github.events.release }}
         run:
           echo $TAG_NAME
 
@@ -20,4 +20,4 @@ jobs:
           token: ${{ secrets.SYSDIG_OPERATOR_ACCESS_TOKEN }}
           repository: lilx1ao/sysdig-operator
           event-type: sysdig-release
-          client-payload: '{"tag": $TAG_NAME }'
+          client-payload: '{"tag": ${{ github.events.release.tag_name }} }'
