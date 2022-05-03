@@ -3,9 +3,9 @@ entries:
   sysdig:
   - apiVersion: v1
     appVersion: 12.4.0
-    created: "2022-05-02T21:22:05.13989179Z"
+    created: "2022-05-03T14:36:35.322259239Z"
     description: Sysdig Monitor and Secure agent
-    digest: 96ef6e5da917c36f10cea989ef0e109196d70e68832d71141f125d6186bb312f
+    digest: f1f932da5ac5e17a5dec890d50189776c3c167bd2d219ddc9fbf7caa46ef0eac
     home: https://www.sysdig.com/
     icon: https://478h5m1yrfsa3bbe262u7muv-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/Shovel_600px.png
     keywords:
@@ -31,6 +31,6 @@ entries:
     - https://app.sysdigcloud.com/#/settings/user
     - https://github.com/draios/sysdig
     urls:
-    - https://github.com/lilx1ao/charts/releases/download/sysdig-1.12.73/sysdig-1.12.73.tgz
-    version: 1.12.73
-generated: "2022-05-02T21:22:05.13989789Z"
+    - https://github.com/lilx1ao/charts/releases/download/sysdig-1.12.74/sysdig-1.12.74.tgz
+    version: 1.12.74
+generated: "2022-05-03T14:36:35.322272539Z"
